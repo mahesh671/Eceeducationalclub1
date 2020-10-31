@@ -31,6 +31,7 @@ WebView v1;
                 return true;
             case R.id.home:
                 Intent i1=new Intent(website3.this,MainActivity.class);
+                i1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(i1);
                 return true;
             default:
