@@ -3,6 +3,7 @@ package com.example.eceeducationalclub;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,6 +28,10 @@ WebView v1;
             case R.id.refresh:
                 Toast.makeText(this,"refreshed",Toast.LENGTH_SHORT).show();
                 v1.reload();
+                return true;
+            case R.id.home:
+                Intent i1=new Intent(website3.this,MainActivity.class);
+                startActivity(i1);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
