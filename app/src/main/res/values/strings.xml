@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Eceeducationalclub</string>
+    <string name="app_name">Ece Educational club</string>
     <string name="title_activity_website2">website2</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -11,6 +11,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="welcome_to_ece_educational_app">Welcome To ECE Educational App</string>
     <string name="educationalclub_website">EDUCATIONALCLUB WEBSITE</string>
-    <string name="sri_vasavi_lms">Sri vasavi lms</string>
-    <string name="sri_vasavi_engineering_college">Sri vasavi Engineering college</string>
+    <string name="sri_vasavi_lms">Sri Vasavi LMS</string>
+    <string name="sri_vasavi_engineering_college">Sri Vasavi Engineering College</string>
 </resources>
