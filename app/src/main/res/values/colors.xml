@@ -10,5 +10,7 @@
     <color name="Red">#F00</color>
     <color name="green">#8BC34A</color>
     <color name="pink">#E91E63</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="violet">#FF00FF</color>
 
 </resources>
