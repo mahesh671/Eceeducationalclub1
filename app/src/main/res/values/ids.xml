@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="web2" type="id" />
+    <item name="web1" type="id" />
+    <item name="imageView" type="id" />
+    <item name="web3" type="id" />
+</resources>

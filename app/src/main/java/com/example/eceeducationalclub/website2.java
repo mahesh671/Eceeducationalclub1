@@ -54,10 +54,10 @@ public class website2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_website2);
-        v1 = (WebView) findViewById(R.id.vasaviLms);
+        v1 = findViewById(R.id.vasaviLms);
         WebSettings webSettings = v1.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        v1.loadUrl("http://srivasaviengg.digivarsity.com/");
+        v1.loadUrl("http://srivasaviengg.digivarsity.com/login/index.php");
         v1.setWebViewClient(new WebViewClient());
 
     }
