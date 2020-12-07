@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eceeducationalclub"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         </activity>
         <activity android:name=".website2" android:configChanges="orientation|screenSize"/>
         <activity android:name=".website3" android:configChanges="orientation|screenSize" />

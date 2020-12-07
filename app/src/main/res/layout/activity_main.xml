@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,12 +54,12 @@
         android:layout_marginRight="80dp"
         android:background="@drawable/rounded_corner"
         android:focusable="auto"
-        android:fontFamily="@font/sancreek"
+        android:fontFamily="@font/aclonica"
         android:text="@string/educationalclub_website"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:backgroundTint="@color/pink" />
+        app:backgroundTint="@color/orange" />
 
     <Button
         android:id="@+id/web2"
@@ -75,7 +76,7 @@
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
         android:background="@drawable/rounded_corner"
-        android:fontFamily="@font/sancreek"
+        android:fontFamily="@font/aclonica"
         android:text="@string/sri_vasavi_lms"
         android:textColor="@color/black"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -96,12 +97,12 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
-        android:fontFamily="@font/sancreek"
         android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/aclonica"
         android:text="@string/sri_vasavi_engineering_college"
-        android:textSize="15sp"
         android:textColor="@color/black"
-        app:backgroundTint="@color/violet" />
+        android:textSize="15sp"
+        app:backgroundTint="@color/Yellow" />
 
     <ImageView
         android:id="@+id/imageView"

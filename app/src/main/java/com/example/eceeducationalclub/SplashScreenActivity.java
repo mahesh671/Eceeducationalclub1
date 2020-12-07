@@ -22,7 +22,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 .withHeaderText("Welcome! To")
                 .withAfterLogoText("ECE Educationalclub App")
                 .withBackgroundColor(Color.WHITE)
-
                 .withLogo(R.mipmap.ic_launcher_foreground);
 
         config.getAfterLogoTextView().setTextColor(Color.BLACK);
