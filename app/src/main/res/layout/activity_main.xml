@@ -1,44 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginEnd="17dp"
-        android:shadowRadius="5"
-        android:shadowColor="@color/black"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="@font/eagle_lake"
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/imageView"
+             android:layout_alignBottom="@+id/imageView"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginStart="14dp"
+             android:layout_marginLeft="14dp"
+             android:layout_marginEnd="28dp"
+             android:layout_marginRight="28dp"
+             android:layout_marginBottom="-30dp"
+             android:fontFamily="@font/eagle_lake"
+             android:gravity="center_horizontal"
+             android:shadowColor="@color/black"
 
 
-        android:gravity="center_horizontal"
-        android:text="@string/welcome_to_ece_educational_app"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/Red"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+             android:shadowRadius="5"
+             android:text="@string/welcome_to_ece_educational_app"
+             android:textAlignment="center"
+             android:textAllCaps="true"
+             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+             android:textColor="@color/Red"
+             android:textSize="25sp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+         <Button
         android:id="@+id/web1"
         android:layout_width="254dp"
         android:layout_height="59dp"
@@ -49,7 +57,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="263dp"
+        android:layout_marginTop="293dp"
         android:layout_marginEnd="72dp"
         android:layout_marginRight="80dp"
         android:background="@drawable/rounded_corner"
@@ -106,8 +114,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="142dp"
-        android:layout_height="109dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_alignBottom="@+id/web1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="false"
@@ -120,6 +128,8 @@
         android:layout_marginBottom="100dp"
         app:srcCompat="@drawable/eceeducationalclub"
         android:contentDescription="@string/app_name"/>
+     </RelativeLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
