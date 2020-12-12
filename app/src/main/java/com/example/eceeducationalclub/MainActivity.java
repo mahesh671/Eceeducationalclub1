@@ -19,10 +19,9 @@ import android.widget.Toast;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 
-public class MainActivity extends AppCompatActivity implements UpdateHelper.OnUpdateCheckListener{
-Button b1,b2,b3;
-private FirebaseRemoteConfig remoteConfig;
-
+public class MainActivity extends AppCompatActivity implements UpdateHelper.OnUpdateCheckListener {
+    Button b1, b2, b3;
+    private FirebaseRemoteConfig remoteConfig;
 
 
     @Override
@@ -30,38 +29,38 @@ private FirebaseRemoteConfig remoteConfig;
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_main);
-    b1=(Button)findViewById(R.id.web1);
-    b2=(Button)findViewById(R.id.web2);
-    b3=(Button)findViewById(R.id.web3);
+        b1 = (Button) findViewById(R.id.web1);
+        b2 = (Button) findViewById(R.id.web2);
+        b3 = (Button) findViewById(R.id.web3);
 
-    b1.setOnClickListener(new View.OnClickListener(){
-
-        @Override
-        public void onClick(View view) {
-            Intent i1=new Intent(MainActivity.this,website1.class);
-            startActivity(i1);
-        }
-    });
-        b2.setOnClickListener(new View.OnClickListener(){
+        b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i2=new Intent(MainActivity.this,website2.class);
+                Intent i1 = new Intent(MainActivity.this, website1.class);
+                startActivity(i1);
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i2 = new Intent(MainActivity.this, website2.class);
                 startActivity(i2);
             }
         });
-        b3.setOnClickListener(new View.OnClickListener(){
+        b3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i3=new Intent(MainActivity.this,website3.class);
+                Intent i3 = new Intent(MainActivity.this, website3.class);
                 startActivity(i3);
             }
         });
 
         UpdateHelper.with(this)
-                    .onUpdateCheck(this)
-                    .check();
+                .onUpdateCheck(this)
+                .check();
     }
 
     @Override
@@ -72,7 +71,7 @@ private FirebaseRemoteConfig remoteConfig;
                 .setPositiveButton("UPDATE", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(MainActivity.this,""+urlApp,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "" + urlApp, Toast.LENGTH_SHORT).show();
                     }
                 }).setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
                     @Override

@@ -16,12 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eceeducationalclub"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        </activity>
-        <activity android:name=".website2" android:configChanges="orientation|screenSize"/>
-        <activity android:name=".website3" android:configChanges="orientation|screenSize" />
-        <activity android:name=".website1"  android:configChanges="orientation|screenSize"/>
-        <activity android:name=".SplashScreenActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity
+            android:name=".website2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".website3"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".website1"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

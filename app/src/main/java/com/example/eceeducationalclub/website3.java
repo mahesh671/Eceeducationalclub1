@@ -14,23 +14,24 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 public class website3 extends AppCompatActivity {
-WebView v1;
+    WebView v1;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.example_menu,menu);
+        inflater.inflate(R.menu.example_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.refresh:
-                Toast.makeText(this,"refreshed",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "refreshed", Toast.LENGTH_SHORT).show();
                 v1.reload();
                 return true;
             case R.id.home:
-                Intent i1=new Intent(website3.this,MainActivity.class);
+                Intent i1 = new Intent(website3.this, MainActivity.class);
                 i1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(i1);
                 return true;
@@ -39,21 +40,22 @@ WebView v1;
         }
 
     }
+
     @Override
     public void onBackPressed() {
-        if(v1.canGoBack())
-        {
+        if (v1.canGoBack()) {
             v1.goBack();
-        }else {
+        } else {
             super.onBackPressed();
         }
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_website3);
-        v1=(WebView)findViewById(R.id.vasaviEcap);
-        WebSettings webSettings=v1.getSettings();
+        v1 = (WebView) findViewById(R.id.vasaviEcap);
+        WebSettings webSettings = v1.getSettings();
         webSettings.setJavaScriptEnabled(true);
         v1.loadUrl("http://srivasaviengg.ac.in/");
         v1.setWebViewClient(new WebViewClient());

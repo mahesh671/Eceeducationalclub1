@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".website1">
+
     <WebView
         android:id="@+id/Eclub"
         android:layout_width="match_parent"

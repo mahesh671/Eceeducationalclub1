@@ -28,9 +28,9 @@ public class SplashScreenActivity extends AppCompatActivity {
         config.getHeaderTextView().setTextColor(Color.RED);
         config.getHeaderTextView().setTextSize(52);
         config.getAfterLogoTextView().setTextSize(25);
-        config.getHeaderTextView().setShadowLayer(5,5,5,Color.BLACK);
+        config.getHeaderTextView().setShadowLayer(5, 5, 5, Color.BLACK);
 
-        View easySplashScreen=config.create();
+        View easySplashScreen = config.create();
         setContentView(easySplashScreen);
     }
 }
