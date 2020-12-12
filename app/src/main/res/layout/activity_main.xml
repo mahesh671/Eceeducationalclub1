@@ -1,135 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/background">
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-     <RelativeLayout
-         android:layout_width="match_parent"
-         android:layout_height="match_parent" >
-
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_above="@+id/imageView"
-             android:layout_alignBottom="@+id/imageView"
-             android:layout_alignParentStart="true"
-             android:layout_alignParentLeft="true"
-             android:layout_alignParentEnd="true"
-             android:layout_alignParentRight="true"
-             android:layout_marginStart="14dp"
-             android:layout_marginLeft="14dp"
-             android:layout_marginEnd="28dp"
-             android:layout_marginRight="28dp"
-             android:layout_marginBottom="-30dp"
-             android:fontFamily="@font/eagle_lake"
-             android:gravity="center_horizontal"
-             android:shadowColor="@color/black"
-
-
-             android:shadowRadius="5"
-             android:text="@string/welcome_to_ece_educational_app"
-             android:textAlignment="center"
-             android:textAllCaps="true"
-             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-             android:textColor="@color/Red"
-             android:textSize="25sp"
-             android:textStyle="bold"
-             app:layout_constraintBottom_toBottomOf="parent"
-             app:layout_constraintLeft_toLeftOf="parent"
-             app:layout_constraintRight_toRightOf="parent"
-             app:layout_constraintTop_toTopOf="parent" />
-
-         <Button
-        android:id="@+id/web1"
-        android:layout_width="254dp"
-        android:layout_height="59dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="293dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="80dp"
-        android:background="@drawable/rounded_corner"
-        android:focusable="auto"
-        android:fontFamily="@font/aclonica"
-        android:text="@string/educationalclub_website"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:backgroundTint="@color/orange" />
-
-    <Button
-        android:id="@+id/web2"
         android:layout_width="wrap_content"
-        android:layout_height="59dp"
-        android:layout_below="@+id/web1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
-        android:background="@drawable/rounded_corner"
-        android:fontFamily="@font/aclonica"
-        android:text="@string/sri_vasavi_lms"
-        android:textColor="@color/black"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="20sp"
-        app:backgroundTint="@color/green" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/web3"
-        android:layout_width="25dp"
-        android:layout_height="59dp"
-        android:layout_below="@+id/web2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
-        android:background="@drawable/rounded_corner"
-        android:fontFamily="@font/aclonica"
-        android:text="@string/sri_vasavi_engineering_college"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:backgroundTint="@color/Yellow" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_alignBottom="@+id/web1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="false"
-        android:layout_marginStart="135dp"
-        android:layout_marginLeft="141dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginRight="169dp"
-        android:layout_marginBottom="100dp"
-        app:srcCompat="@drawable/eceeducationalclub"
-        android:contentDescription="@string/app_name"/>
-     </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/eagle_lake"
+                android:gravity="center"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5"
+                android:text="@string/welcome_to_ece_educational_app"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/Red"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="162dp"
+                android:layout_height="156dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="25dp"
+                app:srcCompat="@drawable/eceeducationalclub" />
+
+            <Button
+                android:id="@+id/web1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/rounded_corner"
+                android:focusable="auto"
+                android:fontFamily="@font/aclonica"
+                android:padding="10dp"
+                android:text="@string/educationalclub_website"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:backgroundTint="@color/orange" />
+
+            <Button
+                android:id="@+id/web2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/aclonica"
+                android:padding="10dp"
+                android:text="@string/sri_vasavi_lms"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/web3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/sri_vasavi_engineering_college"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:backgroundTint="@color/Yellow" />
+        </LinearLayout>
     </ScrollView>
 
 
-</RelativeLayout>
+</LinearLayout>
