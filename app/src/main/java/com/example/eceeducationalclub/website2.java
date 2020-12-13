@@ -57,6 +57,7 @@ public class website2 extends AppCompatActivity {
         v1 = findViewById(R.id.vasaviLms);
         WebSettings webSettings = v1.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
         v1.loadUrl("http://srivasaviengg.digivarsity.com/login/index.php");
         v1.setWebViewClient(new WebViewClient());
 
