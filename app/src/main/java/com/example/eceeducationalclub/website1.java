@@ -3,6 +3,7 @@ package com.example.eceeducationalclub;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -23,6 +24,7 @@ public class website1 extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -58,6 +60,7 @@ public class website1 extends AppCompatActivity {
         v1 = (WebView) findViewById(R.id.Eclub);
         WebSettings webSettings = v1.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
         v1.loadUrl("https://sites.google.com/view/ece-educational-club/home");
         v1.setWebViewClient(new WebViewClient());
 
