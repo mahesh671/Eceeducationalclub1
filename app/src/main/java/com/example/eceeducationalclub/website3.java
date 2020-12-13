@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -58,7 +59,17 @@ public class website3 extends AppCompatActivity {
         WebSettings webSettings = v1.getSettings();
         webSettings.setJavaScriptEnabled(true);
         v1.loadUrl("http://srivasaviengg.ac.in/");
-        v1.setWebViewClient(new WebViewClient());
+        v1.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (url.startsWith("http:") || url.startsWith("https:")) {
+                    return false;
+                }
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+                return true;
+            }
+        });
 
     }
 }
